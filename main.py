@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 import sqlite3
 from pydantic import BaseModel
+import os
 
 app = FastAPI()
 

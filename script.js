@@ -1,4 +1,4 @@
-const API_URL = "http://127.0.0.1:8000"; 
+const API_URL = "https://superpalplanner.onrender.com"; 
 
 async function fetchGoals(user) {
     let selectedDay = document.getElementById(`day-selector-${user}`).value;

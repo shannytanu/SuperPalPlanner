@@ -30,6 +30,12 @@ CREATE TABLE IF NOT EXISTS goals (
 """)
 conn.commit()
 
+# Get the correct database URL from environment variables
+DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///./database.db")
+
+# Create database engine
+engine = create_engine(DATABASE_URL)
+
 # Goal model
 class Goal(BaseModel):
     user: str
